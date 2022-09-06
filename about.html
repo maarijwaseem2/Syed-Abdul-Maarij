@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITY WEBSITE DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" ></a>
+            <div class="nav-link" id="navlink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>HOME </b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="course.html"><b>COURSE</b></a></li>
+                    <li><a href="blog.html"><b>BLOG</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!---------About Us content-------->
+    <sectio class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus sunt, architecto obcaecati eligendi dolore repellendus error pariatur neque? Tenetur, non blanditiis quos iste maxime cumque sapiente itaque vel explicabo molestias eos porro temporibus laboriosam tempore necessitatibus laudantium sunt fuga? Omnis autem nulla distinctio soluta quidem minima delectus exercitationem. Labore quia tenetur magnam natus aut vitae quas deserunt quos distinctio nihil cupiditate nulla laudantium tempore laboriosam sint nemo porro, asperiores sequi perferendis officiis iste dicta perspiciatis illum! Ut repellat doloribus nulla dolores facere, in magni ipsam eligendi quas placeat nam commodi temporibus quam, neque quae nostrum. Aliquam assumenda eligendi necessitatibus inventore maxime dolore, molestiae praesentium, labore quisquam nemo nostrum laudantium consequuntur laboriosam at error aperiam? Ipsa nulla harum maxime quasi iure debitis quae cum blanditiis, tempore voluptatem voluptatibus dolorum quo magnam perspiciatis repellendus. Illo cupiditate fuga cumque nobis sequi, repellat quaerat, ducimus ratione similique consequatur dignissimos id. Adipisci, quasi voluptatum necessitatibus sint blanditiis maiores officia provident earum velit iste dignissimos, quos dolores! Porro doloremque facilis asperiores earum delectus quae error accusamus, provident ea aliquam dolore quisquam expedita officia natus suscipit? Voluptate nesciunt labore quia quo itaque temporibus nobis non unde sit, ullam excepturi et repellat esse vel eveniet blanditiis totam.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="Images/about.jpg">
+            </div>
+        </div>
+    </sectio>
+    <!----------Footer------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur eum, modi libero, <br> blanditiis voluptatibus repellat minima nihil ab beatae, similique eaque dolores nulla dolorum nesciunt atque sit vel quibusdam.</p>
+        <div class="icon">
+            <i class="fa fa-facebook"Facebook ></i>
+            <i class="fa fa-instagram"Instagram></i>
+            <i class="fa fa-twitter"Twitter></i>
+            <i class="fa fa-linkedin"Linkedin></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+    </section>
+    <!--------Javascript---------->
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showMenu(){
+            navlink.style.right="0";
+        }
+        function hideMenu(){
+            navlink.style.right="-200px";
+        }
+     </script>
+</body>
+</html>

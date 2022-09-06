@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITY WEBSITE DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" ></a>
+            <div class="nav-link" id="navlink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"><b>HOME </b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="course.html"><b>COURSE</b></a></li>
+                    <li><a href="blog.html"><b>BLOG</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!---------Contact US-------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8121.293694345364!2d67.07437751297742!3d24.944838518719862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1661871986729!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road ,ABC Building</h5>
+                        <p>Pakistan, Karachi, in</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+92-3240236991</h5>
+                        <p>Monday to Saturday,10am to 10pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>maarijwaseem7@gmail.com</h5>
+                        <p>Email us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="" method="post">
+                    <input type="text"name="name" placeholder="Enter Your Name"required>
+                    <input type="email"name="email"placeholder="Enter Your Email Address"required>
+                    <input type="text"name="subject"placeholder="Enter Your Subject"required>
+                    <textarea rows="8"name="message"placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!----------Footer------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur eum, modi libero, <br> blanditiis voluptatibus repellat minima nihil ab beatae, similique eaque dolores nulla dolorum nesciunt atque sit vel quibusdam.</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+    </section>
+    <!--------Javascript---------->
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showMenu(){
+            navlink.style.right="0";
+        }
+        function hideMenu(){
+            navlink.style.right="-200px";
+        }
+     </script>
+</body>
+</html>
